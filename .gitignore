@@ -1,0 +1,31 @@
+# Carpeta de compilación
+build/
+build-*/
+
+# Configuración local de Qt Creator
+.qtcreator/
+*.pro.user
+*.pro.user.*
+
+# Archivos generados por qmake
+Makefile
+Makefile.*
+.qmake.stash
+
+# Archivos compilados
+*.o
+*.json
+*.obj
+*.exe
+*.dll
+*.a
+*.lib
+
+# Carpetas de compilación alternativas
+debug/
+release/
+
+# Archivos generados automáticamente por Qt
+moc_*.cpp
+ui_*.h
+qrc_*.cpp

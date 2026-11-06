@@ -6,3 +6,6 @@ CONFIG -= qt
 SOURCES += \
         main.cpp \
         particula.cpp
+
+HEADERS += \
+    particula.h

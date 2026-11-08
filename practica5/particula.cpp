@@ -3,17 +3,18 @@
 Particula::Particula()
     : x(0.0), y(0.0),
     vx(0.0), vy(0.0),
-    masa(1.0), radio(1.0)
+    masa(1.0), radio(1.0), id(0)
 {
 }
 
-
-Particula::Particula(double x, double y, double vx, double vy, double masa, double radio)
+Particula::Particula(double x, double y, double vx, double vy,
+                     double masa, double radio)
     : x(x), y(y),
     vx(vx), vy(vy),
-    masa(masa), radio(radio)
+    masa(masa), radio(radio), id(0)
 {
 }
+
 
 
 double Particula::getX() const
@@ -57,5 +58,22 @@ void Particula::setVelocidad(double nuevaVx, double nuevaVy)
 {
     vx = nuevaVx;
     vy = nuevaVy;
+}
+
+void Particula::setPosicion(double nuevaX, double nuevaY)
+{
+    x = nuevaX;
+    y = nuevaY;
+}
+
+
+int Particula::getId() const
+{
+    return id;
+}
+
+void Particula::setId(int nuevoId)
+{
+    id = nuevoId;
 }
 

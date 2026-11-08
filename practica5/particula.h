@@ -10,6 +10,7 @@ private:
     double vy;
     double masa;
     double radio;
+    int id;
 
 public:
     Particula();
@@ -26,6 +27,11 @@ public:
     void mover(double dt);
 
     void setVelocidad(double nuevaVx, double nuevaVy);
+
+    void setPosicion(double nuevaX, double nuevaY);
+
+    int getId() const;
+    void setId(int nuevoId);
 
 
 };

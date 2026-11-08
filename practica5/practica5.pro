@@ -4,8 +4,14 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
+        caja.cpp \
         main.cpp \
-        particula.cpp
+        obstaculo.cpp \
+        particula.cpp \
+        simulacion.cpp
 
 HEADERS += \
-    particula.h
+    caja.h \
+    obstaculo.h \
+    particula.h \
+    simulacion.h
